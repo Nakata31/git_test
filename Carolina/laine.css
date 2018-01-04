@@ -1,0 +1,125 @@
+body {
+  
+  background-color: #ff4814;
+}
+
+
+.inside {  
+  
+  font-family: helvetica;
+  color: #013E51;
+  height: 80px;
+  width: 300px;
+  background-color: #FFF6F4;
+  border-radius: 15px 15px 15px 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-left: 50.5px;
+  margin-top: -85.5px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.typewriter h4 {
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  animation: 
+    typing 2.5s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: #ff4814; }
+}
+
+.typewriter2 h4 {
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin:  auto;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+    animation: typing 2.5s steps(50, end);
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+  from {opacity: 0}
+  to {opacity: 1}
+ 
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: #ff4814; }
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse {
+    transform-origin: center center;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
